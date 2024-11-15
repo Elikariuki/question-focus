@@ -62,7 +62,7 @@ class MenuButtonActions {
   setFocusToMenuitem(newMenuitem) {
     this.menuitemNodes.forEach(function (item) {
        if (item==newMenuitem){
-        item.setAttribute(tabIndex, "0"); // Set tabIndex to 0 for the new menuitem
+        item.setAttribute("tabIndex", "0"); // Set tabIndex to 0 for the new menuitem
         item.focus(); // Focus the new menuitem
        } 
        else {  
