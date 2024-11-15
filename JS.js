@@ -64,7 +64,9 @@ class MenuButtonActions {
        if (item==newmenuitem){
         item.setAttribute(tabIndex, "0"); // Set tabIndex to 0 for the new menuitem
         item.focus(); // Focus the new menuitem
-       } 
+       } else {  
+        item.setAttribute(tabIndex, "-1"); // Set tabIndex to -1 for other menuitems
+        };
     });
   }
 
